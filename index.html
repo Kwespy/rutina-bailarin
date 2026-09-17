@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#111111">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Rutina">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="style.css">
+  <title>Rutina bailarín</title>
+</head>
+<body>
+  <main class="wrap">
+    <section class="top">
+      <div>
+        <h1 id="app-title">Rutina bailarín</h1>
+        <div id="app-subtitle" class="muted small">Cargando rutina…</div>
+        <div id="routine-version" class="muted tiny"></div>
+      </div>
+      <div class="right">
+        <div id="cycle">Vuelta 1</div>
+        <div id="count" class="muted small">0/5 sesiones</div>
+      </div>
+    </section>
+
+    <div class="update-row">
+      <button id="refresh-routine" type="button">Actualizar rutina</button>
+      <span id="update-status" class="muted small" aria-live="polite"></span>
+    </div>
+
+    <div class="progress"><div id="bar" class="bar"></div></div>
+    <nav class="tabs" id="tabs" aria-label="Sesiones"></nav>
+
+    <div id="banner" class="card banner">
+      <strong>Vuelta completada</strong>
+      <div class="muted small">Reiniciando para la siguiente vuelta…</div>
+    </div>
+
+    <section id="panel" class="card"></section>
+
+    <section class="section">
+      <details>
+        <summary>8 min diarios — verte más vertical</summary>
+        <div id="mobility" class="mobility"></div>
+      </details>
+    </section>
+
+    <div class="footer">
+      Orden libre: puedes hacer las sesiones en cualquier orden. Brazos a 1–2 repeticiones del fallo; resto a 2–3.
+      Tus checks y vueltas se guardan en este iPhone aunque actualicemos la rutina desde GitHub.
+    </div>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
